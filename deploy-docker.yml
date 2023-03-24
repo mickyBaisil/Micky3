@@ -7,7 +7,7 @@
         name: python-pip
         state: present
     - name: Install docker
-      yum:
+      ansible.builtin.dnf:
         name: docker
         state: present
     - name: start docker

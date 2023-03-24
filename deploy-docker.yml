@@ -3,7 +3,7 @@
   become: True
   tasks:
     - name: Install python pip
-      yum:
+      ansible.builtin.dnf:
         name: python-pip
         state: present
     - name: Install docker
